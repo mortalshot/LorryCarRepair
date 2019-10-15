@@ -104,27 +104,33 @@ header {
     border-radius: 25px;
     padding: 25px 30px;
 }
+
 .title {
     font-size: 20px;
     font-weight: bold;
     padding: 20px 0;
 }
+
 .cardLeftSection {
     color: rgba(0, 47, 184, 0.5);
     font-weight: 900;
 }
-.cardRightSection li{
+
+.cardRightSection li {
     padding: 9px 0;
 }
+
 .cardRightSection li:first-child {
     padding-top: 0;
 }
+
 .moreButton {
     font-weight: 900;
     color: rgba(237, 79, 50, 0.5);
     font-size: 15px;
     align-self: flex-end;
 }
+
 .warning {
     font-size: 20px;
     font-weight: 900;
@@ -158,46 +164,43 @@ header {
     min-height: 400px;
 }
 
-.item {
-    width: 320px;
-    height: 230px;
-}
-
-.owl-item {
-    padding: 20px;
-}
 .owl-dots {
     display: none;
 }
-.owl-prev i, .owl-next i {
+
+.owl-prev i,
+.owl-next i {
     color: #C4C4C4;
 }
-.owl-prev, .owl-next {
+
+.owl-prev,
+.owl-next {
     position: absolute;
     top: 50%;
     margin-top: -20px;
 }
+
 .owl-prev {
     left: -25px;
 }
+
 .owl-next {
     right: -25px;
 }
-.center {
-    transform: scale(2);
-    transition: all, .25s;
-}
+
 /*photoGallery style*/
 
-/*needRepair style*/
-#needRepair {
+/*contacts style*/
+#contacts {
     min-height: 500px;
     background-color: #eee;
     font-size: 20px;
 }
+
 .question {
     font-size: 30px;
 }
+
 .repairsBtn {
     background-color: #ed4f32;
     border-radius: 10px;
@@ -207,16 +210,19 @@ header {
     padding: 10px 60px;
     border: 0;
 }
-/*needRepair style*/
+
+/*contacts style*/
 /*Vacancy style*/
 #vacancy {
     min-height: 500px;
 }
+
 #vacancy h1 {
     font-size: 20px;
     font-weight: bold;
     padding-top: 20px;
 }
+
 .toWork {
     text-decoration: underline;
     font-size: 15px;
@@ -224,13 +230,16 @@ header {
     background-color: transparent;
     border: 0;
     padding-top: 40px;
+    font-weight: 900;
 }
+
 /*Vacancy style*/
 
 footer {
     min-height: 100px;
     background-color: #2d2d2d
 }
+
 footer p {
     color: #eee;
 }
