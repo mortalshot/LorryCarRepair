@@ -215,6 +215,7 @@ header {
 #vacancy h1 {
     font-size: 20px;
     font-weight: bold;
+    padding-top: 20px;
 }
 .toWork {
     text-decoration: underline;
