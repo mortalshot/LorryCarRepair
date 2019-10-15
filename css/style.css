@@ -152,3 +152,31 @@ header {
 #summary a:not(.collapsed):after {
     content: 'скрыть';
 }
+
+/*photoGallery style*/
+#photoGallery {
+    min-height: 400px;
+}
+
+.owl-item {
+    padding: 20px;
+}
+.owl-dots {
+    display: none;
+}
+.owl-prev i, .owl-next i {
+    color: #C4C4C4;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.owl-prev {
+    left: -25px;
+}
+.owl-next {
+    right: -25px;
+}
+
+/*photoGallery style*/
