@@ -1,5 +1,5 @@
 $('.owl-carousel').owlCarousel({
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     navText: ['<i class="fas fa-caret-left fa-2x" aria-hidden="true"></i>',

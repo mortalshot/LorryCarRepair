@@ -158,6 +158,11 @@ header {
     min-height: 400px;
 }
 
+.item {
+    width: 320px;
+    height: 230px;
+}
+
 .owl-item {
     padding: 20px;
 }
@@ -178,5 +183,53 @@ header {
 .owl-next {
     right: -25px;
 }
-
+.center {
+    transform: scale(2);
+    transition: all, .25s;
+}
 /*photoGallery style*/
+
+/*needRepair style*/
+#needRepair {
+    min-height: 500px;
+    background-color: #eee;
+    font-size: 20px;
+}
+.question {
+    font-size: 30px;
+}
+.repairsBtn {
+    background-color: #ed4f32;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-size: 23px;
+    font-weight: 900;
+    padding: 10px 60px;
+    border: 0;
+}
+/*needRepair style*/
+/*Vacancy style*/
+#vacancy {
+    min-height: 500px;
+}
+#vacancy h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.toWork {
+    text-decoration: underline;
+    font-size: 15px;
+    color: rgba(237, 79, 50, 0.5);
+    background-color: transparent;
+    border: 0;
+    padding-top: 40px;
+}
+/*Vacancy style*/
+
+footer {
+    min-height: 100px;
+    background-color: #2d2d2d
+}
+footer p {
+    color: #eee;
+}
