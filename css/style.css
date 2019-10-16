@@ -30,8 +30,12 @@ li {
     border-bottom: 3px solid #002FB8;
 }
 
+.navbar-brand {
+    margin-right: 0;
+}
 .navbar-nav li {
     text-transform: uppercase;
+    text-align: center;
 }
 
 .nav-link {
