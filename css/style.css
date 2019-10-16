@@ -11,12 +11,12 @@ p {
 }
 
 
-.container-fluid {
-    padding: 0 70px;
-}
-
 li {
     list-style: none;
+}
+
+.container-fluid {
+    padding: 0 11px;
 }
 
 
@@ -33,14 +33,22 @@ li {
 .navbar-brand {
     margin-right: 0;
 }
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #002fb8;
+    text-transform: uppercase;
+}
+
 .navbar-nav li {
     text-transform: uppercase;
-    text-align: center;
 }
 
 .nav-link {
     padding: 0.4rem 1rem;
     color: #2D2D2D;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -52,13 +60,14 @@ li {
 .phone {
     font-size: 23px;
     font-weight: 800;
+    white-space: nowrap;
 }
 
 /*menu*/
 
 /*header*/
 header {
-    min-height: 450px;
+    min-height: 600px;
 }
 
 .sell h1 {
@@ -122,10 +131,16 @@ header {
 
 .cardRightSection li {
     padding: 9px 0;
+    font-size: 15px;
 }
 
 .cardRightSection li:first-child {
     padding-top: 0;
+}
+
+.colorRed900 {
+    color: #ed4f32;
+    font-weight: 900;
 }
 
 .moreButton {
@@ -143,7 +158,7 @@ header {
 
 
 #summary .collapse:not(.show) {
-    height: 205px !important;
+    height: 199px !important;
     overflow: hidden;
 
     display: -webkit-box;
@@ -152,7 +167,7 @@ header {
 }
 
 #summary .collapsing {
-    min-height: 205px !important;
+    min-height: 199px !important;
 }
 
 #summary a.collapsed:after {
@@ -198,11 +213,11 @@ header {
 #contacts {
     min-height: 500px;
     background-color: #eee;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .question {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .repairsBtn {
@@ -246,4 +261,119 @@ footer {
 
 footer p {
     color: #eee;
+}
+
+/* Icon 1 */
+
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon2 span {
+    background: hsla(220,8%,51%,.6);
+}
+
+/* Icon 3*/
+
+.animated-icon2 span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
+    top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+    top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .container-fluid {
+        padding: 0 70px;
+    }
+
+    .question {
+        font-size: 30px;
+    }
+
+    #contacts {
+        font-size: 20px;
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .headerContact {
+        align-items: flex-end;
+    }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    ...
 }

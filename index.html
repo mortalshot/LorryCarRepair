@@ -16,13 +16,17 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg p-0 mt-3 w-100">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/LORRYCARREPAIR.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg p-0 mt-3" id="menu">
+            <a class="navbar-brand logo" href="#">
+                <span>lorry</span><span style="color: #2d2d2d; font-weight: 300;">car</span><span style="color: #ed4f32">repair</span>
+            </a>
+
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
             </button>
-            <div class="collapse navbar-collapse mx-auto" id="navbarText">
+
+            <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active p-3">
                         <a class="nav-link" href="#about">О нас</a>
@@ -37,18 +41,19 @@
                         <a class="nav-link" href="#vacancy">Вакансии</a>
                     </li>
                 </ul>
-            <div class="d-flex flex-column align-items-center"><span class="phone">+7 (925) 030-92-37</span> repairlorricar@gmail.com</div>
             </div>
-        </div>
-
-    </nav>
-    <header class="d-flex align-items-center">
+            <div class="col-12 col-lg-3 d-flex flex-column p-0 headerContact">
+                <span class="phone">+7 (925) 030-92-37</span> repairlorricar@gmail.com
+            </div>
+        </nav>
+    </div>
+    <header class="d-flex align-items-center my-2">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-12 col-lg-5 text-center">
                     <img class="img-fluid" src="./img/white-traffic-car.png" alt="IorryCarRepair">
                 </div>
-                <div class="col-sm-7 align-self-end">
+                <div class="col-12 col-lg-7 align-self-end">
                     <div class="ml-1">
                         <div class="sell">
                             <h1>СЛОМАЛИСЬ НА ДОРОГЕ?
@@ -58,7 +63,7 @@
                         <br><br>
                         <div class="row">
                             <img src="./img/Vector.svg" alt="IorryCarRepair" style="padding-right: 10px">
-                            <p class="mb-0">Выезжаем по: <br>
+                            <p class="mb-0" style="font-size: 12px;">Выезжаем по: <br>
                                 <span style="font-weight: 800; font-size: 14px">Москва и МО, Тверская обл.</span> <br>
                                 <span style="font-style: italic">+200 км от МКАД</span>
                             </p>
@@ -68,19 +73,21 @@
             </div>
         </div>
     </header>
-    <section id="about" class="d-flex align-items-center mt-5 mb-5">
-        <div class="w-100 d-flex justify-content-around">
-            <div class="achievement">
-                <h1>2017</h1>
-                <p>в деле <br> c 2017 года</p>
-            </div>
-            <div class="achievement">
-                <h1>300</h1>
-                <p>более <br> 300 вызовов</p>
-            </div>
-            <div class="achievement">
-                <h1>20 000</h1>
-                <p>более <br> 20 000 км выездов</p>
+    <section id="about" class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around">
+                <div class="achievement">
+                    <h1>2017</h1>
+                    <p>в деле <br> c 2017 года</p>
+                </div>
+                <div class="achievement">
+                    <h1>300</h1>
+                    <p>более <br> 300 вызовов</p>
+                </div>
+                <div class="achievement">
+                    <h1>20 000</h1>
+                    <p>более <br> 20 000 км выездов</p>
+                </div>
             </div>
         </div>
     </section>
@@ -88,7 +95,7 @@
         <div class="container-fluid">
             <div class="row mt-5 mb-5">
                 <div class="col-12 col-md-6">
-                    <div id="summary" class="serviceCard d-flex flex-column">
+                    <div id="summary" class="serviceCard d-flex flex-column my-3">
                         <div class="collapse mb-3" id="collapseSummaryAuto">
                             <div class="d-flex flex-column">
                                 <div class="title">
@@ -101,12 +108,22 @@
                                             <li>предварительная диагностика</li>
                                             <li>замена сцепления</li>
                                             <li>ремонт ходовой части, замена ступичного подшипника, кпп, редуктора</li>
-                                            <li>предварительная диагностика</li>
-                                            <li>замена сцепления</li>
-                                            <li>ремонт ходовой части, замена ступичного подшипника, кпп, редуктора</li>
-                                            <li>предварительная диагностика</li>
-                                            <li>замена сцепления</li>
-
+                                            <li>ремонт двигателя, регулировка клапанов</li>
+                                            <li>ремонт топливной системы</li>
+                                            <li>ремонт гидравлической системы</li>
+                                            <li>ремонт пневматической системы</li>
+                                            <li>ремонт стартера, генератора</li>
+                                            <li>ремонт тормозной системы</li>
+                                            <li>ремонт компрессора</li>
+                                            <li>ремонт электрооборудования, поиск и устранение неисправности</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cardLeftSection col-sm-2">Ремонт марок:</div>
+                                    <div class="cardRightSection col-sm-10">
+                                        <ul>
+                                            <li>Renault, Volvo, DAF, Man, Scania, IVECO, МАЗ, КАМАЗ</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -116,7 +133,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div id="summary" class="serviceCard d-flex flex-column">
+                    <div id="summary" class="serviceCard d-flex flex-column my-3">
                         <div class="collapse mb-3" id="collapseSummaryTrailer">
                             <div class="d-flex flex-column">
                                 <div class="title">
@@ -126,15 +143,19 @@
                                     <div class="cardLeftSection col-sm-2">Услуги:</div>
                                     <div class="cardRightSection col-sm-10">
                                         <ul>
-                                            <li>ремонт тормозных дисков, барабанов полуприцепа</li>
+                                            <li>ремонт тормозных дисков, барабанов полуприцепа, регулировка тормозной системы</li>
                                             <li>ремонт подвески</li>
                                             <li>ремонт ходовой части прицепов</li>
-                                            <li>предварительная диагностика</li>
-                                            <li>замена сцепления</li>
-                                            <li>ремонт ходовой части, замена ступичного подшипника, кпп, редуктора</li>
-                                            <li>предварительная диагностика</li>
-                                            <li>замена сцепления</li>
-
+                                            <li>замена ступичных подшипников</li>
+                                            <li>другие виды работ по ремонту прицепов</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cardLeftSection col-sm-2">Ремонт марок:</div>
+                                    <div class="cardRightSection col-sm-10">
+                                        <ul>
+                                            <li>SCHMITZ, KRONE, KOGEL, KLEBERG, FRUHAUF и т.д.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -144,21 +165,21 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center pt-5">
+            <div class="row justify-content-center">
                 <div class="cardLeftSection">Дополнительно:</div>
                 <div class="cardRightSection">
                     <ul>
-                        <li>выезд на место ремонта - от 3 000 ₽ (+1 км от МКАД - 45 ₽)</li>
-                        <li>покупка и доставка автозапчастей при нашем ремонте – 1 000 ₽</li>
-                        <li>час простоя (ожидания) по вине заказчика – 1 000 ₽</li>
-                        <li>запуск в мороз дизельного мотора – от 5 000 ₽</li>
-                        <li>отогрев и реанимация грузового дизельного транспорта в мороз -15’C и ниже – 10 000 ₽</li>
+                        <li>выезд на место ремонта - <span class="colorRed900">от 3 000 ₽ (+1 км от МКАД - 45 ₽)</span></li>
+                        <li>покупка и доставка автозапчастей при нашем ремонте –<span class="colorRed900"> 1 000 ₽</span></li>
+                        <li>час простоя (ожидания) по вине заказчика –<span class="colorRed900"> 1 000 ₽</span></li>
+                        <li>запуск в мороз дизельного мотора –<span class="colorRed900"> от 5 000 ₽</span></li>
+                        <li>отогрев и реанимация грузового дизельного транспорта в мороз -15’C и ниже –<span class="colorRed900"> 10 000 ₽</span></li>
                     </ul>
                 </div>
             </div>
             <div class="row warning justify-content-center mt-5">
-                <p><span style="color: #002fb8">Внимание!</span> Окончательная стоимость ремонта будет рассчитана после проведения диагностики и установления причины поломки. <br>
-                    По всем вопросам звоните по указанному ниже телефону или пишите через WhatsApp.</p>
+                <div><span style="color: #002fb8">Внимание!</span> Окончательная стоимость ремонта будет рассчитана после проведения диагностики и установления причины поломки. <br>
+                    По всем вопросам звоните по указанному ниже телефону или пишите через WhatsApp.</div>
             </div>
         </div>
 
@@ -190,18 +211,20 @@
         </div>
     </section>
     <section id="contacts" class="d-flex align-items-center flex-column justify-content-center">
-        <p>Время работы: <span style="font-weight: 900">пн-вс. 7:00 - 24:00</span> </p> <br>
-        <p class="question">По всем вопросам: <span style="font-weight: 900">+7 (925) 030-92-37</span> <br>
-            Почта: <span style="font-weight: 900">repairlorricar@gmail.com</span></p> <br>
-        <p>Не смогли дозвониться? Оставьте заявку, мы вам перезвоним!</p> <br>
-        <button class="repairsBtn">Мне нужен ремонт!</button>
+        <div class="container-fluid d-flex align-items-center flex-column justify-content-center">
+            <p>Время работы: <span style="font-weight: 900">пн-вс. 7:00 - 24:00</span> </p> <br>
+            <p class="question text-center">По всем вопросам: <span style="font-weight: 900">+7 (925) 030-92-37</span> <br>
+                Почта: <span style="font-weight: 900">repairlorricar@gmail.com</span></p> <br>
+            <p>Не смогли дозвониться? Оставьте заявку, мы вам перезвоним!</p> <br>
+            <button class="repairsBtn">Мне нужен ремонт!</button>
+        </div>
     </section>
-    <section id="vacancy" class="d-flex align-items-center flex-column justify-content-center">
+    <section id="vacancy" class="d-flex flex-column align-items-center justify-content-center">
         <h1>В нашу команду требуются:</h1>
         <div class="container-fluid">
-            <div class="row mt-5 mb-5">
+            <div class="row">
                 <div class="col-12 col-sm-6">
-                    <div id="summary" class="serviceCard d-flex flex-column">
+                    <div id="summary" class="serviceCard d-flex flex-column my-3">
                         <div>
                             <div class="d-flex flex-column">
                                 <div class="title">
@@ -220,13 +243,67 @@
                                         <p>cвободный график, з/п в зависимости от навыков и сезона</p>
                                     </div>
                                 </div>
-                                <button class="toWork align-self-end">хочу работать!</button>
+
+                                <button type="button" class="toWork align-self-end" data-toggle="modal" data-target="#findWork" data-whatever="автомеханик">хочу работать!</button>
+
+                                <form action="send.php" method="post">
+                                    <div class="modal fade" id="findWork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Вакансия</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">Желаемая должность:</label>
+                                                            <input type="text" class="form-control" id="recipient-name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Ваше фамилия и имя:</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Ваш номер:</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Ваш почтовый адрес:</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Есть ли у вас машина:</label>
+                                                            <label><input type="radio" name="car" value="Есть"> Есть</label>
+                                                            <label><input type="radio" name="car" value="Нету"> Нету</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Есть ли у вас инструменты:</label>
+                                                            <label><input type="radio" name="tools" value="Есть"> Есть</label>
+                                                            <label><input type="radio" name="tools" value="Нету"> Нету</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Ваш опыт работы:</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                                    <button type="button" class="btn btn-primary">Отправить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <div id="summary" class="serviceCard d-flex flex-column">
+                    <div id="summary" class="serviceCard d-flex flex-column my-3">
                         <div>
                             <div class="d-flex flex-column">
                                 <div class="title">
@@ -245,7 +322,7 @@
                                         <p>cвободный график, з/п в зависимости от навыков и сезона</p>
                                     </div>
                                 </div>
-                                <button class="toWork align-self-end">хочу работать!</button>
+                                <button type="button" class="toWork align-self-end" data-toggle="modal" data-target="#findWork" data-whatever="автоэлектрик-диагност">хочу работать!</button>
                             </div>
                         </div>
                     </div>
@@ -260,10 +337,10 @@
 
     <script src="https://kit.fontawesome.com/c66887870f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="./libs/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/1.js"></script>
 </body>
 
