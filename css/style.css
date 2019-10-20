@@ -26,8 +26,17 @@ li {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
     color: #002FB8;
-    font-weight: 800;
-    border-bottom: 3px solid #002FB8;
+    font-weight: 900;
+    font-size: 17px;
+    border-bottom: 2px solid #002FB8;
+}
+
+.nav-link:hover {
+    color: #002FB8;
+    font-weight: 900;
+    border-bottom: 2px solid #002FB8;
+    font-size: 17px;
+    transition: 0.5s ease all;
 }
 
 .navbar-brand {
@@ -43,19 +52,20 @@ li {
 
 .navbar-nav li {
     text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .nav-link {
-    padding: 0.4rem 1rem;
     color: #2D2D2D;
     white-space: nowrap;
 }
 
-.nav-link:hover {
-    color: #002FB8;
-    font-weight: 800;
-    border-bottom: 3px solid #002FB8;
+a.nav-link {
+    padding: 0.4rem 0;
 }
+
+
 
 .phone {
     font-size: 23px;
@@ -63,17 +73,21 @@ li {
     white-space: nowrap;
 }
 
+.callMeBtn {
+    background: transparent;
+    border: 0;
+}
+
 /*menu*/
 
 /*header*/
 header {
-    min-height: 600px;
+    min-height: 550px;
 }
 
 .sell h1 {
     font-size: 35px;
     font-weight: 900;
-    padding: 15px 0;
 }
 
 .sellBlue {
@@ -92,12 +106,18 @@ header {
 
 .achievement {
     text-align: center;
+    padding-top: 20px;
+}
+
+.achievement:first-child {
+    padding-top: 0;
 }
 
 .achievement h1 {
     color: #ED4F32;
     font-weight: 900;
     font-size: 35px;
+    margin: 0;
 }
 
 .achievement p {
@@ -132,6 +152,10 @@ header {
 .cardRightSection li {
     padding: 9px 0;
     font-size: 15px;
+}
+
+.cardRightSection ul {
+    padding: 0 11px;
 }
 
 .cardRightSection li:first-child {
@@ -200,11 +224,11 @@ header {
 }
 
 .owl-prev {
-    left: -25px;
+    left: -45px;
 }
 
 .owl-next {
-    right: -25px;
+    right: -45px;
 }
 
 /*photoGallery style*/
@@ -226,7 +250,7 @@ header {
     color: #f1f1f1;
     font-size: 23px;
     font-weight: 900;
-    padding: 10px 60px;
+    padding: 10px 20px;
     border: 0;
 }
 
@@ -239,7 +263,8 @@ header {
 #vacancy h1 {
     font-size: 20px;
     font-weight: bold;
-    padding-top: 20px;
+    margin-bottom: 0;
+    padding-top: 30px;
 }
 
 .toWork {
@@ -304,7 +329,7 @@ footer p {
 }
 
 .animated-icon2 span {
-    background: hsla(220,8%,51%,.6);
+    background: hsla(220, 8%, 51%, .6);
 }
 
 /* Icon 3*/
@@ -360,6 +385,27 @@ footer p {
 
     #contacts {
         font-size: 20px;
+    }
+
+    .achievement {
+        padding-top: 0;
+    }
+
+    .achievement h1 {
+        margin-bottom: .5rem;
+    }
+
+    .repeirsBtn {
+        padding: 10px 60px;
+    }
+
+    #vacancy h1 {
+        padding-top: 20px;
+        margin-bottom: .5rem;
+    }
+
+    .cardRightSection ul {
+        padding-left: 40px;
     }
 }
 

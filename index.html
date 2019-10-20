@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="./libs/owl-carousel-2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./libs/owl-carousel-2/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
-
 </head>
 
 <body>
-
-    <div class="container-fluid">
+    <div class="navigation container-fluid">
         <nav class="navbar navbar-expand-lg p-0 mt-3" id="menu">
             <a class="navbar-brand logo" href="#">
                 <span>lorry</span><span style="color: #2d2d2d; font-weight: 300;">car</span><span style="color: #ed4f32">repair</span>
@@ -42,12 +39,40 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-3 d-flex flex-column p-0 headerContact">
+            <div class="col-12 col-lg-2 d-flex flex-column p-0 headerContact">
                 <span class="phone">+7 (925) 030-92-37</span> repairlorricar@gmail.com
             </div>
+            <!--
+            <div class="modal fade" id="CallMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header flex-column">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Заказать звонок</h5>
+                            <p>Оставьте заявку и наш специалист свяжется с вами в ближайшее время!</p>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Как вас зовут? </label>
+                                    <input type="text" class="form-control" id="callName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Контактный телефон</label>
+                                    <input type="text" class="form-control" id="callPhone" required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                            <button type="button" class="btn btn-primary">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
         </nav>
     </div>
-    <header class="d-flex align-items-center my-2">
+    <header class="d-flex align-items-center py-3">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-5 text-center">
@@ -55,13 +80,13 @@
                 </div>
                 <div class="col-12 col-lg-7 align-self-end">
                     <div class="ml-1">
-                        <div class="sell">
-                            <h1>СЛОМАЛИСЬ НА ДОРОГЕ?
+                        <div class="sell py-4">
+                            <h1>СЛОМАЛИСЬ НА ДОРОГЕ?<br>
                                 МЫ ПОМОЖЕМ ВАМ С РЕМОНТОМ!</h1>
-                            <p>Выездной ремонт грузового автотранспорта любой сложности “прямо на дороге” с <span class="sellBlue">7</span> утра до <span class="sellBlue">12</span> ночи <span class="sellBlue">7</span> дней в неделю</p>
+                            <p>Выездной ремонт грузового автотранспорта любой сложности <br> “прямо на дороге” с <span class="sellBlue">7</span> утра до <span class="sellBlue">12</span> ночи <span class="sellBlue">7</span> дней в неделю</p>
                         </div>
                         <br><br>
-                        <div class="row">
+                        <div class="d-flex">
                             <img src="./img/Vector.svg" alt="IorryCarRepair" style="padding-right: 10px">
                             <p class="mb-0" style="font-size: 12px;">Выезжаем по: <br>
                                 <span style="font-weight: 800; font-size: 14px">Москва и МО, Тверская обл.</span> <br>
@@ -75,16 +100,16 @@
     </header>
     <section id="about" class="d-flex align-items-center">
         <div class="container-fluid">
-            <div class="d-flex justify-content-around">
-                <div class="achievement">
+            <div class="row d-flex justify-content-around">
+                <div class="col-12 col-sm-4 achievement">
                     <h1>2017</h1>
                     <p>в деле <br> c 2017 года</p>
                 </div>
-                <div class="achievement">
+                <div class="col-12 col-sm-4 achievement">
                     <h1>300</h1>
                     <p>более <br> 300 вызовов</p>
                 </div>
-                <div class="achievement">
+                <div class="col-12 col-sm-4 achievement">
                     <h1>20 000</h1>
                     <p>более <br> 20 000 км выездов</p>
                 </div>
@@ -169,11 +194,11 @@
                 <div class="cardLeftSection">Дополнительно:</div>
                 <div class="cardRightSection">
                     <ul>
-                        <li>выезд на место ремонта - <span class="colorRed900">от 3 000 ₽ (+1 км от МКАД - 45 ₽)</span></li>
+                        <li>выезд на место ремонта - <span class="colorRed900">от <span class="pr-1">3</span>00<span class="pr-1">0₽</span> (+1 км от МКАД - <span class="pr-1">45</span>₽)</span></li>
                         <li>покупка и доставка автозапчастей при нашем ремонте –<span class="colorRed900"> 1 000 ₽</span></li>
-                        <li>час простоя (ожидания) по вине заказчика –<span class="colorRed900"> 1 000 ₽</span></li>
-                        <li>запуск в мороз дизельного мотора –<span class="colorRed900"> от 5 000 ₽</span></li>
-                        <li>отогрев и реанимация грузового дизельного транспорта в мороз -15’C и ниже –<span class="colorRed900"> 10 000 ₽</span></li>
+                        <li>час простоя (ожидания) по вине заказчика –<span class="colorRed900"> <span class="pr-1">1</span>00<span class="pr-1">0</span>₽</span></li>
+                        <li>запуск в мороз дизельного мотора –<span class="colorRed900"> от <span class="pr-1">5</span>00<span class="pr-1">0</span>₽</span></li>
+                        <li>отогрев и реанимация грузового дизельного транспорта в мороз -15’C и ниже –<span class="colorRed900"> 1<span class="pr-1">0</span>00<span class="pr-1">0</span>₽</span></li>
                     </ul>
                 </div>
             </div>
@@ -212,9 +237,12 @@
     </section>
     <section id="contacts" class="d-flex align-items-center flex-column justify-content-center">
         <div class="container-fluid d-flex align-items-center flex-column justify-content-center">
-            <p>Время работы: <span style="font-weight: 900">пн-вс. 7:00 - 24:00</span> </p> <br>
-            <p class="question text-center">По всем вопросам: <span style="font-weight: 900">+7 (925) 030-92-37</span> <br>
-                Почта: <span style="font-weight: 900">repairlorricar@gmail.com</span></p> <br>
+            <p>Время работы: <span style="font-weight: 900; white-space: nowrap;">пн-вс. 7:00 - 24:00</span> </p> <br>
+            <!--            <button type="button" data-toggle="modal" data-target="#CallMe" class="callMeBtn">-->
+            <p class="question text-center">По всем вопросам: <span style="font-weight: 900; white-space: nowrap;">+7 (925) 030-92-37</span> <br>
+                Почта: <span style="font-weight: 900">repairlorricar@gmail.com</span></p>
+            <!--                </button>-->
+            <br>
             <p>Не смогли дозвониться? Оставьте заявку, мы вам перезвоним!</p> <br>
             <button class="repairsBtn">Мне нужен ремонт!</button>
         </div>
@@ -246,7 +274,7 @@
 
                                 <button type="button" class="toWork align-self-end" data-toggle="modal" data-target="#findWork" data-whatever="автомеханик">хочу работать!</button>
 
-                                <form action="send.php" method="post">
+                                <form action="mail.php" method="POST">
                                     <div class="modal fade" id="findWork" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
@@ -257,42 +285,30 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form>
                                                         <div class="form-group">
                                                             <label for="recipient-name" class="col-form-label">Желаемая должность:</label>
-                                                            <input type="text" class="form-control" id="recipient-name">
+                                                            <input type="text" class="form-control" id="recipient-name" name="user_vocation">
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-form-label">Ваше фамилия и имя:</label>
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control" name="user_name">
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-form-label">Ваш номер:</label>
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control" name="user_phone">
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-form-label">Ваш почтовый адрес:</label>
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="col-form-label">Есть ли у вас машина:</label>
-                                                            <label><input type="radio" name="car" value="Есть"> Есть</label>
-                                                            <label><input type="radio" name="car" value="Нету"> Нету</label>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="col-form-label">Есть ли у вас инструменты:</label>
-                                                            <label><input type="radio" name="tools" value="Есть"> Есть</label>
-                                                            <label><input type="radio" name="tools" value="Нету"> Нету</label>
+                                                            <input type="text" class="form-control" name="user_email">
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-form-label">Ваш опыт работы:</label>
-                                                            <input type="text" class="form-control">
+                                                            <input type="text" class="form-control" name="user_experience">
                                                         </div>
-                                                    </form>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
-                                                    <button type="button" class="btn btn-primary">Отправить</button>
+                                                    <button type="submit" class="btn btn-primary">Отправить</button>
                                                 </div>
                                             </div>
                                         </div>
