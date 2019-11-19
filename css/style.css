@@ -5,6 +5,10 @@ body {
     color: #2D2D2D;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     padding: 0;
     margin: 0;
@@ -17,6 +21,11 @@ li {
 
 .container-fluid {
     padding: 0 11px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -78,16 +87,52 @@ a.nav-link {
     border: 0;
 }
 
+.menuContact a {
+    color: #2D2D2D;
+}
+
+.menuContact a:hover {
+    color: #ED4F32;
+}
+
 /*menu*/
 
 /*header*/
-header {
-    min-height: 550px;
+.header-offer {
+    min-height: 530px;
+    display: flex;
+    align-items: center;
 }
 
-.sell h1 {
+.header-offer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-offer-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.header-offer-content-text__subtitle {
+    padding-bottom: 100px;
+}
+
+.header-offer-content-text__title {
     font-size: 35px;
     font-weight: 900;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.header-offer-content-location {
+    display: flex;
+}
+
+.header-offer-content-location__text {
+    font-size: 12px;
+    padding: 0 10px;
 }
 
 .sellBlue {
@@ -109,8 +154,8 @@ header {
     padding-top: 20px;
 }
 
-.achievement:first-child {
-    padding-top: 0;
+.achievement:last-child {
+    padding-bottom: 20px;
 }
 
 .achievement h1 {
@@ -147,6 +192,7 @@ header {
 .cardLeftSection {
     color: rgba(0, 47, 184, 0.5);
     font-weight: 900;
+    padding-bottom: 15px;
 }
 
 .cardRightSection li {
@@ -207,6 +253,11 @@ header {
     min-height: 400px;
 }
 
+.owl-carousel .item img {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .owl-dots {
     display: none;
 }
@@ -244,6 +295,14 @@ header {
     font-size: 24px;
 }
 
+.question a {
+    color: #2D2D2D;
+}
+
+.question a:hover {
+    color: #ED4F32;
+}
+
 .repairsBtn {
     background-color: #ed4f32;
     border-radius: 10px;
@@ -252,6 +311,10 @@ header {
     font-weight: 900;
     padding: 10px 20px;
     border: 0;
+}
+
+.repairsBtn:hover {
+    background-color: #C3381E;
 }
 
 /*contacts style*/
@@ -286,6 +349,28 @@ footer {
 
 footer p {
     color: #eee;
+}
+
+.modalCancel {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+
+}
+
+.modalCancel:hover {
+    color: #ed4f32;
+}
+
+.modal-footer .repairsBtn {
+    font-size: 20px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #C3381E;
 }
 
 /* Icon 1 */
@@ -376,7 +461,7 @@ footer p {
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .container-fluid {
-        padding: 0 70px;
+        padding: 0 20px;
     }
 
     .question {
@@ -407,6 +492,7 @@ footer p {
     .cardRightSection ul {
         padding-left: 40px;
     }
+
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -414,12 +500,22 @@ footer p {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-    .headerContact {
+    .menuContact {
         align-items: flex-end;
+    }
+
+    .header-offer-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+    .header-offer-content {
+        padding: 0 30px;
     }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    ...
+    .container-fluid {
+        padding: 0 70px;
+    }
 }
